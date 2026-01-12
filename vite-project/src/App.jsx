@@ -59,7 +59,7 @@ requestAnimationFrame(animate)
 
   
   return (
-    <div className='dark:bg-black relative'>
+    <div className='bg-sky-100 dark:bg-black relative min-h-screen'>
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       

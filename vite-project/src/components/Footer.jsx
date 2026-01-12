@@ -22,7 +22,13 @@ const Footer = ({ theme }) => {
                 
                 
                 className='space-y-5 text-sm text-gray-700 dark:text-gray-400'>
-                    <img src={theme === 'dark' ? assets.logo_dark : assets.logo} className='w-32 sm:w-24' alt="" />
+                    <div className='w-32 sm:w-24'>
+                      <img 
+                        src={theme === 'dark' ? assets.logo_dark : assets.logo} 
+                        className='w-full h-auto object-contain logo-transparent' 
+                        alt="Logo" 
+                      />
+                    </div>
                     <p className='max-w-md'>From strategy to execution, we craft digital solutions that move your business forward</p>
 
                     <ul className='flex gap-8'>

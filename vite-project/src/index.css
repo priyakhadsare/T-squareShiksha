@@ -1,16 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-*{
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #e0f2fe; /* sky blue 100 */
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #root {
+    background-color: #000000;
+  }
+}
+
+* {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   cursor: none;
-
 }
-@theme {
-  --color-primary: #5044E5;
 
+@theme {
+  --color-primary: #5044e5;
+}
+
+/* Make logo backgrounds transparent */
+.logo-transparent {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1);
+}
+
+.dark .logo-transparent {
+  mix-blend-mode: normal;
+  filter: none;
 }

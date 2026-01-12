@@ -33,6 +33,13 @@ const colleges = [
 ];
 
 const Law = () => {
+  const handleCollegeClick = () => {
+    const contactSection = document.getElementById('contact-us');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <motion.div 
       initial="hidden"
@@ -55,12 +62,13 @@ const Law = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
+            onClick={handleCollegeClick}
             className="w-[250px] rounded-xl shadow-lg overflow-hidden bg-white dark:bg-gray-800 text-center cursor-pointer transition-transform duration-300 hover:scale-105"
           >
             <img
               src={college.image}
               alt={college.name}
-              className="w-full h-40 object-cover"
+              className="w-full h-40 object-cover pointer-events-none"
             />
             <h3 className="p-4 text-lg font-semibold text-gray-800 dark:text-white">
               {college.name}
