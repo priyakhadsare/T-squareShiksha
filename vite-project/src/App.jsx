@@ -11,6 +11,11 @@ import ContactUs from './components/ContactUs'
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
 import Consultancy from './components/Consultancy'
+import Btech from './components/Pages/Btech'
+import Law from './components/Pages/law'
+import MBA from './components/Pages/mba'
+import MBBS from './components/Pages/mbbs'
+import Design from './components/Pages/design'
 
 
 const App = () => {
@@ -57,9 +62,18 @@ requestAnimationFrame(animate)
     <div className='dark:bg-black relative'>
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
+      
       <Hero />
       <TrustedBy />
       <Services />
+      
+      {/* Page Sections - Right after Services */}
+      <Btech />
+      <MBA />
+      <MBBS />
+      <Design />
+      <Law />
+      
       <Consultancy/>
       <OurWork />
       <Teams />

@@ -3,6 +3,8 @@ import assets from '../assets/assets'
 import ThemeToggleBtn from './ThemeToggleBtn' 
 import { easeOut, motion } from "motion/react"
 
+
+
 const Navbar = ({theme, setTheme}) => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -23,7 +25,7 @@ const Navbar = ({theme, setTheme}) => {
 
             <img src={assets.close_icon} alt="" className='w-5 absolute right-4 top-4 sm:hidden'  onClick={()=> setSidebarOpen(false)}/> 
 
-            <a onClick={()=>setSidebarOpen(false)} href="#" 
+            <a onClick={()=>setSidebarOpen(false)} href="#btech" 
             className='sm:hover:border-b'>B.tech</a>
             <a onClick={()=>setSidebarOpen(false)} href="#mba" 
             className='sm:hover:border-b'>MBA</a>
