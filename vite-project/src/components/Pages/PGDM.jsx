@@ -1,38 +1,39 @@
 import React from "react";
 import { motion } from "motion/react";
 import Title from "../Title";
-import coep from "../../assets/coep.png";
-import pccoe from "../../assets/pccoe.png";
-import mit from "../../assets/mit.png";
-import vit from "../../assets/vit.png";
+import iims from "../../assets/iims.png";
+import indira from "../../assets/indira.png";
+import pibm from "../../assets/pibm.png";
+import patil from "../../assets/patil.png";
+import iiebm from "../../assets/iiebm.png";
 
 const colleges = [
   {
     id: 1,
     name: "International Institute Of Management Studies",
-    image: coep,
+    image: iims,
   },
   {
     id: 2,
     name: "Indira College",
-    image: pccoe,
+    image: indira,
   },
   {
     id: 3,
     name: "PIBM",
-    image: mit,
+    image: pibm,
   },
 
   {
     id: 4,
     name: "DY Patil",
-    image: vit,
+    image: patil,
   },
 
   {
     id:5,
     name:"IIEBM",
-    image:vit,
+    image:iiebm,
   },
 
   
