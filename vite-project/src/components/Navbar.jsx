@@ -40,6 +40,8 @@ const Navbar = ({theme, setTheme}) => {
         href="#design" className='sm:hover:border-b'>Design</a>
         <a onClick={()=>setSidebarOpen(false)} href="#law"
         className='sm:hover:border-b'>Law</a>
+        <a onClick={()=>setSidebarOpen(false)} href="#pgdm"
+        className='sm:hover:border-b'>PGDM</a>
             
         </div>  
 

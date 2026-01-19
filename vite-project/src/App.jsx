@@ -16,6 +16,7 @@ import Law from './components/Pages/law'
 import MBA from './components/Pages/mba'
 import MBBS from './components/Pages/mbbs'
 import Design from './components/Pages/design'
+import PGDM from './components/Pages/PGDM'
 
 
 const App = () => {
@@ -73,6 +74,7 @@ requestAnimationFrame(animate)
       <MBBS />
       <Design />
       <Law />
+      <PGDM />
       
       <Consultancy/>
       <OurWork />

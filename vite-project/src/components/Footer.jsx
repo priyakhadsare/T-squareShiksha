@@ -37,6 +37,7 @@ const Footer = ({ theme }) => {
                         <li><a className='hover:text-primary' href="#mbbs">MBBS</a></li>
                         <li><a className='hover:text-primary' href="#design">Design</a></li>
                         <li><a className='hover:text-primary' href="#law">Law</a></li>
+                        <li><a className='hover:text-primary' href="#pgdm">PGDM</a></li>
                     </ul>
                 </motion.div>
                 <motion.div 
