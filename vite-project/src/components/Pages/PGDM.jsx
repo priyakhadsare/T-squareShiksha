@@ -6,6 +6,8 @@ import indira from "../../assets/indira.png";
 import pibm from "../../assets/pibm.png";
 import patil from "../../assets/patil.png";
 import iiebm from "../../assets/iiebm.png";
+import pbs from "../../assets/pbs.png";
+import mile from "../../assets/mile.png";
 
 const colleges = [
   {
@@ -35,6 +37,16 @@ const colleges = [
     name:"IIEBM",
     image:iiebm,
   },
+  {
+    id:6,
+    name:"PBS",
+    image:pbs,
+  },
+{
+  id:7,
+  name:"Lexicon Mile Management Institute Of Pune",
+  image:mile,
+}
 
   
     

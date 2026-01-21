@@ -3,13 +3,14 @@ import { motion } from "motion/react";
 import Title from "../Title";
 import coep from "../../assets/coep.png";
 import pccoe from "../../assets/pccoe.png";
-import mit from "../../assets/mit.png";
 import vit from "../../assets/vit.png";
+import patil from "../../assets/patil.png";
+import sinhgad from "../../assets/sinhgad.png";
 
 const colleges = [
   {
     id: 1,
-    name: "College Of Engineering Pune",
+    name: "Bharti Vidyapeeth",
     image: coep,
   },
   {
@@ -19,8 +20,8 @@ const colleges = [
   },
   {
     id: 3,
-    name: "MIT college of engineering",
-    image: mit,
+    name: "DY Patil College Of Engineering",
+    image: patil,
   },
 
   {
@@ -28,32 +29,38 @@ const colleges = [
     name: "VIIT college of engineering",
     image: vit,
   },
+  {
+    id: 5,
+    name: "Sinhgad Institute Of Engineering And technology",
+    image: sinhgad,
+  },
 
-  
+
+
 ];
 
 const Btech = () => {
   const handleCollegeClick = () => {
-    const contactSection = document.getElementById('contact-us');
+    const contactSection = document.getElementById("contact-us");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{once: true}}
-      transition={{staggerChildren: 0.2}}
-      id="btech" 
+      viewport={{ once: true }}
+      transition={{ staggerChildren: 0.2 }}
+      id="btech"
       className="relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white"
     >
-      <Title 
-        title="B.Tech Colleges" 
+      <Title
+        title="B.Tech Colleges"
         desc="Explore top engineering colleges and kickstart your technical career journey."
       />
-      
+
       <div className="flex gap-5 flex-wrap justify-center w-full">
         {colleges.map((college) => (
           <motion.div
