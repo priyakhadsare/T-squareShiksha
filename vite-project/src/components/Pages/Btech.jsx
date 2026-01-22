@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import Title from "../Title";
-import coep from "../../assets/coep.png";
+import bharti from "../../assets/bharti.png";
 import pccoe from "../../assets/pccoe.png";
 import vit from "../../assets/vit.png";
 import patil from "../../assets/patil.png";
@@ -11,7 +11,7 @@ const colleges = [
   {
     id: 1,
     name: "Bharti Vidyapeeth",
-    image: coep,
+    image: bharti,
   },
   {
     id: 2,
