@@ -1,33 +1,62 @@
 import React from "react";
 import { motion } from "motion/react";
 import Title from "../Title";
-import vjti from "../../assets/vjti.png";
+import patil from "../../assets/patil.png";
 import symboisis from "../../assets/symboisis.png";
-import pccoe from "../../assets/pccoe.png";
-import vit from "../../assets/vit.png";
+import indira from "../../assets/indira.png";
+import jbims from "../../assets/jbims.png";
+import pibm from "../../assets/pibm.png";
+import sbiims from "../../assets/sbiims.png";
+import iims from "../../assets/iims.png";
+import iiebm from "../../assets/iiebm.png";
 
 const colleges = [
+  
   {
     id: 1,
-    name: "VJTI Mumbai MBA college",
-    image: vjti,
-  },
-  {
-    id: 2,
-    name: "Symbiosis University, MBA",
+    name: "Symbiosis Institute Of Business Management (SIBM) Pune",
     image: symboisis,
   },
   {
-    id: 3,
-    name: "Collge of MBA in Pune",
-    image: pccoe,
+    id: 2,
+    name: "Jamnalal Bajaj Institute Of Management Studies",
+    image: jbims,
   },
 
   {
-    id: 4,
-    name: "VIT MBA college",
-    image: vit,
+    id: 3,
+    name: "DR.D.Y.PATIL B-SCHOOL Global Business School And Research Centre",
+    image: patil,
   },
+  {
+    id:4,
+    name: "Indira Institute Of Management MBA",
+    image:indira,
+
+  },
+  {
+    id:5,
+    name:"Pune Institute Of Business Management PIBM",
+    image:pibm,
+  },
+  {
+    id:6,
+    name:"SaiBalaji International Institute Of Management Science",
+    image:sbiims,
+
+    
+  },
+  {
+    id:7,
+    name:"International Institute Of Management And Human Resource Development",
+    image:iims,
+  },
+  {
+    id:8,
+    name:"Pune Business School",
+    image:iiebm,
+  },
+
 
   
 ];
